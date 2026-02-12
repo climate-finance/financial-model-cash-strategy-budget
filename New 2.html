@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Model vs. Cash Strategy Budget - Deck View</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ep: {
+                            navy: '#0B1C33',   /* Dark Navy */
+                            teal: '#00D1B2',   /* Vibrant Teal */
+                            light: '#F8FAFC',  /* Light Grey */
+                            surface: '#ffffff',
+                            border: '#E2E8F0',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #ffffff;
+            color: #0B1C33;
+        }
+        /* Hide scrollbar for a cleaner 'deck' presentation */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .slide {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 6rem;
+            border-bottom: 1px solid #f1f5f9;
+            position: relative;
+        }
+        /* Page numbers */
+        .slide-number {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            font-size: 0.8rem;
+            color: #cbd5e1;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="slide bg-white">
+        <div class="max-w-6xl w-full mx-auto">
+            <img src="https://enduringplanet.com/_next/static/images/logo-b1431b87aad010f8a474bf5a54a49e5c.svg" alt="Enduring Planet Logo" class="w-48 mb-8">
+            
+            <h1 class="text-7xl md:text-8xl font-extrabold text-ep-navy tracking-tight leading-[0.95] mb-12">
+                Financial Model <span class="text-ep-teal">&</span><br>
+                Cash Strategy Budget
+            </h1>
+            
+            <div class="flex gap-8 items-start border-l-4 border-ep-teal pl-8 max-w-3xl">
+                <p class="text-2xl md:text-3xl text-gray-500 font-light leading-relaxed">
+                    Founders often "fly blind" by using the wrong tool. Are you designing the future or optimizing liquidity?
+                </p>
+            </div>
+        </div>
+        <div class="slide-number">01 / 11</div>
+    </section>
+
+    <section class="slide bg-ep-light">
+        <div class="max-w-7xl w-full mx-auto">
+            <div class="mb-12">
+                <h2 class="text-4xl font-bold text-ep-navy">The Two Tools & When to Use Them</h2>
+                <p class="text-xl text-gray-500 mt-2">Identify your current mode: Strategic Planning vs. Tactical Execution.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <div class="bg-white rounded-3xl p-10 shadow-xl border-t-8 border-ep-navy">
+                    <div class="flex justify-between items-start mb-8">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-ep-teal mb-2 block">Strategy Tool</span>
+                            <h3 class="text-4xl font-bold text-ep-navy">Financial Model</h3>
+                        </div>
+                        <i data-lucide="map" class="w-10 h-10 text-ep-navy opacity-20"></i>
+                    </div>
+                    <p class="text-xl text-ep-teal italic mb-8 font-serif">"Mapping the Destination"</p>
+                    
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-ep-navy text-sm uppercase tracking-wide border-b border-gray-100 pb-2">When You Need It:</h4>
+                        <div class="flex gap-4 items-start">
+                            <i data-lucide="check" class="w-5 h-5 text-ep-navy mt-1 shrink-0"></i>
+                            <div>
+                                <strong class="block text-ep-navy">Fundraising</strong>
+                                <span class="text-sm text-gray-500">Investors need to validate your growth story and scalability. They want to see a "business execution roadmap" linking drivers to outcomes.</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <i data-lucide="check" class="w-5 h-5 text-ep-navy mt-1 shrink-0"></i>
+                            <div>
+                                <strong class="block text-ep-navy">Validating Viability</strong>
+                                <span class="text-sm text-gray-500">Answering big-picture questions: Is the unit economics sound? Does the customer value justify the acquisition cost (LTV:CAC)?</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <i data-lucide="check" class="w-5 h-5 text-ep-navy mt-1 shrink-0"></i>
+                            <div>
+                                <strong class="block text-ep-navy">Long-Term Structure</strong>
+                                <span class="text-sm text-gray-500">You need to integrate an Income Statement, Balance Sheet, and Cash Flow Statement to assess risk and return holistically by clearly linking earnings, cash generation, and capital structure.</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <i data-lucide="check" class="w-5 h-5 text-ep-navy mt-1 shrink-0"></i>
+                            <div>
+                                <strong class="block text-ep-navy">Strategic Decisions</strong>
+                                <span class="text-sm text-gray-500">A sandbox to test high-stakes decisions—like when to open a new facility, how to price a new product, or when to hire—before committing capital.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-10 shadow-xl border-t-8 border-ep-teal">
+                    <div class="flex justify-between items-start mb-8">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-ep-teal mb-2 block">Cash Management Tool</span>
+                            <h3 class="text-4xl font-bold text-ep-navy">Cash Strategy Budget</h3>
+                        </div>
+                        <i data-lucide="life-buoy" class="w-10 h-10 text-ep-teal opacity-20"></i>
+                    </div>
+                    <p class="text-xl text-ep-navy italic mb-8 font-serif">"Executing the Vision"</p>
+                    
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-ep-navy text-sm uppercase tracking-wide border-b border-gray-100 pb-2">When You Need It:</h4>
+                        <div class="flex gap-4 items-start">
+                            <i data-lucide="alert-circle" class="w-5 h-5 text-ep-teal mt-1 shrink-0"></i>
+                            <div>
+                                <strong class="block text-ep-navy">Cash is "Lumpy"</strong>
+                                <span class="text-sm text-gray-500">Revenue often comes in large bursts (e.g., milestone-based grants) rather than smooth inflows. One delayed payment can wipe out multiple months of runway.</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <i data-lucide="alert-circle" class="w-5 h-5 text-ep-teal mt-1 shrink-0"></i>
+                            <div>
+                                <strong class="block text-ep-navy">CapEx & Receivables</strong>
+                                <span class="text-sm text-gray-500">Critical for asset-heavy sectors with high upfront costs and long receivable cycles. Visibility on cash conversion timing is essential.</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <i data-lucide="alert-circle" class="w-5 h-5 text-ep-teal mt-1 shrink-0"></i>
+                            <div>
+                                <strong class="block text-ep-navy">Policy Uncertainty</strong>
+                                <span class="text-sm text-gray-500">Delays in government disbursements or regulatory decisions can put even the strongest startups in vulnerable cash positions.</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <i data-lucide="alert-circle" class="w-5 h-5 text-ep-teal mt-1 shrink-0"></i>
+                            <div>
+                                <strong class="block text-ep-navy">Deploying Raised Capital</strong>
+                                <span class="text-sm text-gray-500">You've successfully raised capital; now you need to strategically plan its deployment to maximize impact and runway.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="slide-number">02 / 11</div>
+    </section>
+
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <div class="bg-ep-teal text-ep-navy px-4 py-2 rounded font-bold text-sm uppercase tracking-wider">Financial Model Fundamentals</div>
+                <h2 class="text-4xl font-bold text-white">Pillar 1: Reliability & Appropriateness</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="col-span-1 pr-8 border-r border-white/10">
+                    <p class="text-3xl font-light text-gray-300 leading-tight mb-8">
+                         The Financial Model serves as your <strong class="text-white">Strategic Architecture</strong>.
+                    </p>
+                    <p class="text-lg text-gray-400">It maps the destination, managing long-term growth rather than just short-term survival.</p>
+                </div>
+
+                <div class="col-span-2 grid sm:grid-cols-2 gap-6">
+                    <div class="bg-white/5 p-6 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="git-pull-request" class="text-ep-teal w-8 h-8 mb-4"></i>
+                        <h4 class="text-xl font-bold text-white mb-2">Driver-Based Modeling</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Don't just plug in numbers. Link operational activities (like marketing leads or production units) directly to financial outcomes. This "xP&A" approach allows you to answer "how" results are achieved, not just "what" they are.</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="layers" class="text-ep-teal w-8 h-8 mb-4"></i>
+                        <h4 class="text-xl font-bold text-white mb-2">3-Statement Integration</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">A credible model must integrate Income (Profitability), Balance Sheet (Solvency), and Cash Flow (Liquidity). Investors know that profitability without liquidity is a failure, and strong cash flow without balance sheet discipline masks risk.</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="refresh-cw" class="text-ep-teal w-8 h-8 mb-4"></i>
+                        <h4 class="text-xl font-bold text-white mb-2">Working Capital</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Move beyond static balances. You must forecast DSO (Days Sales Outstanding), Inventory Days, and DPO. This exposes "cash traps" where profit exists on paper but cash is tied up in stock or unpaid invoices.</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="truck" class="text-ep-teal w-8 h-8 mb-4"></i>
+                        <h4 class="text-xl font-bold text-white mb-2">CapEx Schedule</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Link capital expenditures to deployment schedules and depreciate them over their useful life. This is vital for assessing capital intensity and the true Return on Invested Capital (ROIC).</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="landmark" class="text-ep-teal w-8 h-8 mb-4"></i>
+                        <h4 class="text-xl font-bold text-white mb-2">Debt Integration</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Automate debt schedules (principal vs. interest). Gain full visibility into how obligations impact liquidity and evaluate financing options without "flying blind."</p>
+                    </div>
+                     <div class="bg-white/5 p-6 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="users" class="text-ep-teal w-8 h-8 mb-4"></i>
+                        <h4 class="text-xl font-bold text-white mb-2">Dynamic Expense Forecasting</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Expenses are living components. Use toggles for role start dates (e.g., "Hire Sales VP in Q3") and centralized inflation assumptions. Hardcoding static expense lines renders the model useless for scenario planning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">03 / 11</div>
+    </section>
+
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <div class="bg-ep-teal text-ep-navy px-4 py-2 rounded font-bold text-sm uppercase tracking-wider">Financial Model Fundamentals</div>
+                <h2 class="text-4xl font-bold text-white">Pillar 2: Structure & Logic</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="col-span-1 pr-8 border-r border-white/10">
+                    <p class="text-3xl font-light text-gray-300 leading-tight mb-8">
+                         The architecture of the model determines its usability.
+                    </p>
+                    <p class="text-lg text-gray-400">A disorganized model confuses investors. Structure builds confidence in the numbers.</p>
+                </div>
+
+                <div class="col-span-2 grid gap-6">
+                    <div class="bg-white/5 p-10 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="workflow" class="text-ep-teal w-10 h-10 mb-6"></i>
+                        <h4 class="text-2xl font-bold text-white mb-4">Business Logic Flow</h4>
+                        <p class="text-gray-400 text-lg mb-4">The Assumptions Sheet is the control center. Do not organize inputs as a random collection of numbers. Instead, organize them to mirror the value creation story:</p>
+                        <div class="bg-black/30 p-4 rounded-lg font-mono text-ep-teal text-sm border border-white/10">
+                            Revenue → COGS → Opex → Working Capital → CapEx → Financing
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 p-10 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="presentation" class="text-ep-teal w-10 h-10 mb-6"></i>
+                        <h4 class="text-2xl font-bold text-white mb-4">Executive Summary</h4>
+                        <p class="text-gray-400 text-lg">Investors should not have to navigate multiple sheets to extract insights. Create a single, visually rich view that consolidates:</p>
+                        <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2 ml-2">
+                            <li>Key KPIs (revenue trends, margin trends)</li>
+                            <li>Liquidity metrics (burn rate, runway)</li>
+                            <li>Scenario toggles for immediate testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">04 / 11</div>
+    </section>
+
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <div class="bg-ep-teal text-ep-navy px-4 py-2 rounded font-bold text-sm uppercase tracking-wider">Financial Model Fundamentals</div>
+                <h2 class="text-4xl font-bold text-white">Pillar 3: Communication & Clarity</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="col-span-1 pr-8 border-r border-white/10">
+                    <p class="text-3xl font-light text-gray-300 leading-tight mb-8">
+                         If the model cannot be easily understood, it will not be trusted.
+                    </p>
+                    <p class="text-lg text-gray-400"> Clarity prevents "black box" syndrome and makes due diligence smoother.</p>
+                </div>
+
+                <div class="col-span-2 grid sm:grid-cols-2 gap-6">
+                    <div class="bg-white/5 p-8 rounded-2xl hover:bg-white/10 transition-colors border border-white/5 col-span-2">
+                        <i data-lucide="file-text" class="text-ep-teal w-8 h-8 mb-4"></i>
+                        <h4 class="text-2xl font-bold text-white mb-4">Documentation</h4>
+                        <p class="text-gray-400 leading-relaxed">Enhance credibility by documenting the basis of your assumptions. Use comments directly in cells to cite sources for market benchmarks, pricing inputs, or historical precedents. This shows you've done your homework.</p>
+                    </div>
+
+                    <div class="bg-white/5 p-8 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="history" class="text-ep-teal w-8 h-8 mb-4"></i>
+                        <h4 class="text-xl font-bold text-white mb-4">Historical Data</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">A model based entirely on the future lacks grounding. Integrate monthly historical data to serve as a reality check and allow for "Budget vs. Actuals" variance analysis to spot assumption bias.</p>
+                    </div>
+
+                    <div class="bg-white/5 p-8 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="palette" class="text-ep-teal w-8 h-8 mb-4"></i>
+                        <h4 class="text-xl font-bold text-white mb-4">Color Coding</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Use industry-standard formatting to reduce user error and make the model audit-friendly:</p>
+                        <div class="flex flex-col gap-2 mt-4 text-xs font-mono bg-black/20 p-3 rounded">
+                            <span class="text-blue-300">Blue Text = Hardcoded Inputs</span>
+                            <span class="text-white">Black Text = Formulas</span>
+                            <span class="text-green-400">Green Text = Links to other sheets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">05 / 11</div>
+    </section>
+
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <div class="bg-ep-teal text-ep-navy px-4 py-2 rounded font-bold text-sm uppercase tracking-wider">Financial Model Fundamentals</div>
+                <h2 class="text-4xl font-bold text-white">Pillar 4: Flexibility</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="col-span-1 pr-8 border-r border-white/10">
+                    <p class="text-3xl font-light text-gray-300 leading-tight mb-8">
+                         A reliable model must be a dynamic tool, not a static snapshot.
+                    </p>
+                    <p class="text-lg text-gray-400">Markets change. Your model must adapt instantly to stress-test the business.</p>
+                </div>
+
+                <div class="col-span-2 grid gap-6">
+                    <div class="bg-white/5 p-10 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="sliders" class="text-ep-teal w-10 h-10 mb-6"></i>
+                        <h4 class="text-2xl font-bold text-white mb-4">Scenario Modeling</h4>
+                        <p class="text-gray-400 text-lg mb-4">Build in a "Live Scenario" switch to toggle between cases instantly. This allows you to evaluate sensitivity to market volatility without rebuilding the sheet:</p>
+                        <div class="flex gap-4 mt-2">
+                             <span class="px-4 py-2 bg-white/10 rounded text-sm border border-white/10">Base Case</span>
+                             <span class="px-4 py-2 bg-ep-teal/20 text-ep-teal rounded text-sm border border-ep-teal/50">Bull Case</span>
+                             <span class="px-4 py-2 bg-red-500/20 text-red-300 rounded text-sm border border-red-500/50">Bear Case</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 p-10 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="archive" class="text-ep-teal w-10 h-10 mb-6"></i>
+                        <h4 class="text-2xl font-bold text-white mb-4">Past Projections (Archive)</h4>
+                        <p class="text-gray-400 text-lg">Create a system to archive previous forecasts. This allows you to track forecast accuracy over time, identifying systematic assumption bias and demonstrating accountability to investors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">06 / 11</div>
+    </section>
+
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <div class="bg-ep-teal text-ep-navy px-4 py-2 rounded font-bold text-sm uppercase tracking-wider">Cash Strategy Budget Fundamentals</div>
+                <h2 class="text-4xl font-bold text-white">Pillar 1: Operational Visibility</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="col-span-1 pr-8 border-r border-white/10">
+                    <p class="text-3xl font-light text-gray-300 leading-tight mb-8">
+                        The budget is strictly focused on <strong class="text-white">Liquidity</strong>.
+                    </p>
+                    <p class="text-lg text-gray-400">It reflects the actual bank account, not the accounting book. "Profit doesn't mean liquidity."</p>
+                </div>
+
+                <div class="col-span-2 grid gap-6">
+                    <div class="bg-white/5 p-10 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="activity" class="text-ep-teal w-10 h-10 mb-6"></i>
+                        <h4 class="text-2xl font-bold text-white mb-4">Operational Focus</h4>
+                        <p class="text-gray-400 text-lg">The budget must be tied to the day-to-day realities of your business. Unlike the P&L (accrual basis), it tracks actual cash movement including:</p>
+                        <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2 ml-2">
+                            <li>Real-time Burn Rate (Cash out the door)</li>
+                            <li>Specific Funding Events (Investment/Grants)</li>
+                            <li>Delayed Revenue Receipts (When the check clears)</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white/5 p-10 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="eye" class="text-ep-teal w-10 h-10 mb-6"></i>
+                        <h4 class="text-2xl font-bold text-white mb-4">Runway & Key Expenses</h4>
+                        <p class="text-gray-400 text-lg">It must clearly highlight your projected cash runout date alongside the main expense categories driving outflows. This visibility allows you to track exactly where cash is going and make informed decisions to adjust spend if needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">07 / 11</div>
+    </section>
+
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <div class="bg-ep-teal text-ep-navy px-4 py-2 rounded font-bold text-sm uppercase tracking-wider">Cash Strategy Budget Fundamentals</div>
+                <h2 class="text-4xl font-bold text-white">Pillar 2: Decision-Driven Structure</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="pr-8">
+                    <p class="text-3xl font-light text-gray-300 leading-tight mb-8">
+                        A budget is a <strong class="text-white">tactical tool</strong> for survival.
+                    </p>
+                    <p class="text-lg text-gray-400 mb-8">It is designed to help you make strategic choices with immediate visibility on how they impact your runway.</p>
+                    <div class="p-6 bg-white/5 border border-white/10 rounded-xl">
+                        <p class="text-white font-serif italic text-xl">"If we delay hiring X, how many months of runway do we gain?"</p>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 p-12 rounded-3xl border border-white/5 hover:border-ep-teal transition-all">
+                    <i data-lucide="git-branch" class="text-ep-teal w-16 h-16 mb-8"></i>
+                    <h3 class="text-3xl font-bold text-white mb-6">Actionable Logic</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Unlike the model which tests "what if" for growth scenarios, the budget tests "what now" for survival. The structure must allow you to toggle specific cash outflows—like pausing CapEx or delaying a vendor payment—and see the result on the bank balance in real-time.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">08 / 11</div>
+    </section>
+
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <div class="bg-ep-teal text-ep-navy px-4 py-2 rounded font-bold text-sm uppercase tracking-wider">Cash Strategy Budget Fundamentals</div>
+                <h2 class="text-4xl font-bold text-white">Pillar 3: Threshold Tracking</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                 <div class="bg-white/5 p-12 rounded-3xl border border-white/5 hover:border-ep-teal transition-all order-2 lg:order-1">
+                    <i data-lucide="bell-ring" class="text-ep-teal w-16 h-16 mb-8"></i>
+                    <h3 class="text-3xl font-bold text-white mb-6">Early Warning System</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        The budget must include built-in alerts for when your forecasted cash balance is projected to fall below a critical threshold. This gives founders time to respond—whether by delaying hiring, speeding up collections, or revisiting spend—before it is too late.
+                    </p>
+                </div>
+
+                <div class="pl-8 order-1 lg:order-2">
+                    <p class="text-3xl font-light text-gray-300 leading-tight mb-8">
+                        Don't just watch the zero date. Watch the <strong class="text-white">Safety Zone</strong>.
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-400 font-bold">1</div>
+                            <span class="text-white text-xl">Define Critical Level (e.g., 2 months payroll)</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-400 font-bold">2</div>
+                            <span class="text-white text-xl">Set Automated Alerts</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 font-bold">3</div>
+                            <span class="text-white text-xl">React Before Crisis</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">09 / 11</div>
+    </section>
+
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <div class="bg-ep-teal text-ep-navy px-4 py-2 rounded font-bold text-sm uppercase tracking-wider">Cash Strategy Budget Fundamentals</div>
+                <h2 class="text-4xl font-bold text-white">Pillar 4: Agility & Updates</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="col-span-1 pr-8 border-r border-white/10">
+                    <p class="text-3xl font-light text-gray-300 leading-tight mb-8">
+                         Volatility is the enemy. Agility is the defense.
+                    </p>
+                    <p class="text-lg text-gray-400">Nothing ever goes exactly as planned. Your budget must be a living document.</p>
+                </div>
+
+                <div class="col-span-2 grid gap-6">
+                    <div class="bg-white/5 p-10 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="monitor-play" class="text-ep-teal w-10 h-10 mb-6"></i>
+                        <h4 class="text-2xl font-bold text-white mb-4">Scenario Analysis</h4>
+                        <p class="text-gray-400 text-lg">Test volatility immediately to see the impact on your bank balance. Allows you to answer questions like:</p>
+                        <ul class="list-disc list-inside text-gray-400 mt-4 space-y-2 ml-2">
+                            <li>"What if the fundraise is delayed by 3 months?"</li>
+                            <li>"What if this milestone slips?"</li>
+                            <li>"What if a grant payment is late?"</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white/5 p-10 rounded-2xl hover:bg-white/10 transition-colors border border-white/5">
+                        <i data-lucide="clock" class="text-ep-teal w-10 h-10 mb-6"></i>
+                        <h4 class="text-2xl font-bold text-white mb-4">Timely Updates</h4>
+                        <p class="text-gray-400 text-lg">It must be updated regularly with actuals, revised plans, and shifting timelines. A stale budget is a dangerous budget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">10 / 11</div>
+    </section>
+
+    <section class="slide bg-white">
+        <div class="max-w-6xl w-full mx-auto text-center">
+            <h2 class="text-5xl font-bold text-ep-navy mb-6">Diagnose Your Need</h2>
+            <p class="text-xl text-gray-500 mb-16">Ask yourself these three questions.</p>
+
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="bg-ep-light p-10 rounded-3xl hover:shadow-xl transition-all">
+                    <span class="text-ep-teal font-bold uppercase tracking-widest text-xs mb-4 block">The Goal</span>
+                    <p class="text-2xl font-serif italic text-ep-navy mb-8 leading-snug">"Am I selling the vision, or managing the bank account?"</p>
+                    <div class="border-t border-gray-200 pt-4 space-y-2">
+                        <div class="flex justify-between text-sm"><span class="text-gray-500">Vision</span> <strong>Financial Model</strong></div>
+                        <div class="flex justify-between text-sm"><span class="text-gray-500">Bank</span> <strong class="text-ep-teal">Cash Strategy Budget</strong></div>
+                    </div>
+                </div>
+
+                <div class="bg-ep-light p-10 rounded-3xl hover:shadow-xl transition-all">
+                    <span class="text-ep-teal font-bold uppercase tracking-widest text-xs mb-4 block">The Urgency</span>
+                    <p class="text-2xl font-serif italic text-ep-navy mb-8 leading-snug">"Do I know if I can make payroll in 12 weeks?"</p>
+                    <div class="border-t border-gray-200 pt-4 space-y-2">
+                        <div class="flex justify-between text-sm"><span class="text-gray-500">Yes / Safe</span> <strong>Financial Model</strong></div>
+                        <div class="flex justify-between text-sm"><span class="text-gray-500">Uncertain</span> <strong class="text-ep-teal">Cash Strategy Budget</strong></div>
+                    </div>
+                </div>
+
+                <div class="bg-ep-light p-10 rounded-3xl hover:shadow-xl transition-all">
+                    <span class="text-ep-teal font-bold uppercase tracking-widest text-xs mb-4 block">The Focus</span>
+                    <p class="text-2xl font-serif italic text-ep-navy mb-8 leading-snug">"Is my focus on long-term strategy or volatility?"</p>
+                    <div class="border-t border-gray-200 pt-4 space-y-2">
+                        <div class="flex justify-between text-sm"><span class="text-gray-500">Strategy</span> <strong>Financial Model</strong></div>
+                        <div class="flex justify-between text-sm"><span class="text-gray-500">Volatility</span> <strong class="text-ep-teal">Cash Strategy Budget</strong></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="slide-number">11 / 11</div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
